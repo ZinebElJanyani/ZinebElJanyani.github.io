@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tapestry&display=swap');
+/* proprietes partagée entre tous les balisesconserne tout les balises */
+html{
+    scroll-behavior: smooth;/*pour se transferer par les lien du nav doucement*/
+}
+
+
+body
+{
+   font-family: 'Tapestry', cursive; 
+   padding:0;
+   margin:0;
+}
+
+ul
+{
+    padding:0;
+    margin:0;   
+}
+
+li{
+    list-style-type:none ;
+    padding:0;
+    margin:0; 
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size:2em;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+/* ***********************NAVBA************************* */
+nav{
+    overflow: hidden;
+    background-color:rgb(250, 242, 230);
+    position:fixed;
+    width:100%;
+    opacity: 0.9;
+   
+}
+nav li :hover{
+    color:rgb(203, 33, 67);
+    text-decoration: underline;
+    text-shadow: 1px 3px 5px  crimson;
+}
+
+nav li{
+  float: right;
+  font-size: 1.2em;
+}
+
+nav li a {
+    text-decoration: none;
+    display: block; 
+     text-align: center;  
+     padding:18px 16px; 
+}
+#logo{
+    font-family:'Dancing Script', cursive; ;
+     font-weight: bold; /*mettre la police sous format gras */
+    float:left;  
+}
+/* *********************imagePrincipale*************** */
+#imagePrincipale{
+  padding-top: 60px; 
+  background: url("media/castle.jpg") no-repeat  fixed 50%;
+  background-size: cover; 
+  height: 799px;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    color:rgb(246, 236, 222);
+    text-align: center;
+    font-size: 6em;
+    margin-top:20px;
+    text-shadow: 1px 3px 2px black 
+}
+
+#premierTrait{
+    height: 1px;
+    width:  25%; 
+    margin:-3px  auto;
+    background-color: aliceblue;
+    
+    box-shadow: 1px 3px 2px black; 
+}
+
+h3{
+     color:rgb(246, 236, 222); 
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 1px 3px 2px rgb(212, 30, 66)     
+}
+
+/* *****************section:presentationtion********************************* */
+#presentation{
+    background-color: rgb(250, 242, 230);
+    padding: 100px 0px 100px 0; /*!!! important pourannuler l'espace entre deux blocks  et auusi a la fin du block*/
+  
+}
+#textIntro p{
+    padding:0px 20%;
+
+}
+
+
+/*#textIntro p{
+    text-align: justify;
+    width:60%;
+    margin:auto;
+
+}*/
+
+.imagesPrestations h4{
+    font-family:'Dancing Script', cursive ;
+    text-align: center;  
+    font-size: 1.8em;
+    font-weight:300;
+    margin: 15px;/*//dans tous les direction on aura 15px */
+/*  padding 15 ç& marche pas*/
+}
+
+#prestations{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.imagesPrestations img{
+    
+    box-shadow: 5px 8px 5px 4px rgba(0,0,0,0.83); 
+    border-radius: 10px;
+    
+}
+ 
+.imagesPrestations a  :hover{
+
+    opacity: 0.5;
+    transform: scale(1.05);/*//pour faire grossier l'image et changer son echelle l;echel normal est 1*/ 
+    transition: 0.6s ease-in-out;/*//demarre doucement et fini doucement*/
+    
+}
+
+/* **************************cSection2:Tourisme************************************* */
+
+#tourisme{
+    background-color: rgb(219, 237, 248);
+    padding: 0px 0 100px 0; /*1px 2%*/
+    height: 1400px;
+}
+#tourisme h2{
+    margin: AUTO;
+    padding-top: 100px;
+    
+
+}
+#ocean{
+    background: url("media/ocean.jpg") ;
+}
+
+#chateau{
+    background: url("media/chateau.JPG");
+    background-size: cover; 
+}
+#phare{
+    background: url("media/phare.JPG");
+}
+#vignoble{
+    background: url("media/vignes.jpg");
+     
+}
+
+#tourisme li{
+ 
+    margin:65px 100px 0 100px ;
+    width:55%;
+    height:226px ;
+    max-width: 550px;
+     float: left; 
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tourisme p{
+    width:235px;
+    height: 45px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    
+}
+
+#ocean p,#phare p{
+     border:1px solid rgb(180, 169, 148) ; 
+     margin:50px -180px 0 0 ;
+     float: right;
+     background-color:rgb(240, 227, 205);
+     box-shadow:5px 5px 1px 0px rgb(204 192 172)
+
+}
+#chateau p,#vignoble p{
+    border:1px solid rgb(197, 160, 149);
+    margin:50px 0 0 -180px;
+    float: left;
+    background-color:rgb(233, 189, 175);
+    box-shadow:5px 5px 1px 0px rgb(209, 170, 159)
+}
+
+
+
+#tourisme #chateau,#tourisme #vignoble{
+    
+    float:right;
+   
+}
+/*
+#tourisme #ocean ,#tourisme  #phare{
+    float:left;
+} on peux directement faire float :left par défault pour tous les li*/
+
+ 
+/* ************************footer:contact*********************************** */
+footer{
+    background-color:rgb(91, 129, 129);
+    
+    padding: 20px 0 10px 0;
+    text-align: center;  
+}
+form{
+    margin: 0px auto;
+    max-width: 900px;
+}
+#contact h2{
+    color: rgb(250, 242, 230);
+    font-size: 2sem;
+   
+}
+ 
+form input ,textarea,#envoyer{
+    border:none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    width: 55%;
+    margin: 1px;
+    font-family:'Tapestry', cursive ;
+    font-size: 1.2em;
+    
+}
+
+#envoyer{
+    font-size: 1.3em ;
+  
+    background-color:rgb(250, 245, 240);
+    text-align: center;
+}
+#envoyer:hover{
+    
+   background-color:rgb(246, 168, 142);
+    color:white;
+    transition: 0.3s ease-in;
+    
+}
+
+form textarea{
+    height: 120px; 
+}
+
+#deuxiemeTrai{
+    
+    width:75%;
+    height: 1px;
+    background-color: white;
+    margin: 60px auto;
+    
+}
+
+#copyrightEtIcons{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    margin-bottom: 30px;
+}
+#copyright{
+    color:rgb(250, 242, 230);
+    text-align: left;
+   
+}
+
+
+#icons a{
+    display:inline-block;
+    padding: 0 15px; /*si on ultilise margin au lieu du padding dans ce cas on aura un espace entre les icones qui n'est pas clicable*/
+    color:rgb(250, 242, 230);
+    font-size: 1.3em;
+   
+
+} 
+#icons a:hover{
+    transform: scale(1.5);/*//pour faire grossier l'image et changer son echelle l;echel normal est 1*/ 
+    transition: 0.2s ease-in-out;/*//demarre doucement et fini doucement */
+        
+}
