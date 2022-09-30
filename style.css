@@ -145,12 +145,12 @@ h3{
 .imagesPrestations a  :hover{
 
     opacity: 0.5;
-    transform: scale(1.05);/*//pour faire grossier l'image et changer son echelle l;echel normal est 1*/ 
-    transition: 0.6s ease-in-out;/*//demarre doucement et fini doucement*/
+    transform: scale(1.05); 
+    transition: 0.6s ease-in-out;
     
 }
 
-/* **************************cSection2:Tourisme************************************* */
+/* **************************Section2:Tourisme************************************* */
 
 #tourisme{
     background-color: rgb(219, 237, 248);
@@ -168,11 +168,11 @@ h3{
 }
 
 #chateau{
-    background: url("media/chateau.JPG");
+    background: url("media/chateau.jpg");
     background-size: cover; 
 }
 #phare{
-    background: url("media/phare.JPG");
+    background: url("media/phare.jpg");
 }
 #vignoble{
     background: url("media/vignes.jpg");
