@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tapestry&display=swap');
-/* proprietes partagée entre tous les balisesconserne tout les balises */
+
 html{
-    scroll-behavior: smooth;/*pour se transferer par les lien du nav doucement*/
+    scroll-behavior: smooth;
 }
 
 
@@ -35,7 +35,7 @@ a{
     text-decoration: none;
     color:black;
 }
-/* ***********************NAVBA************************* */
+/* ***********************NAVBAR************************* */
 nav{
     overflow: hidden;
     background-color:rgb(250, 242, 230);
@@ -63,7 +63,7 @@ nav li a {
 }
 #logo{
     font-family:'Dancing Script', cursive; ;
-     font-weight: bold; /*mettre la police sous format gras */
+     font-weight: bold; 
     float:left;  
 }
 /* *********************imagePrincipale*************** */
@@ -102,7 +102,7 @@ h3{
 /* *****************section:presentationtion********************************* */
 #presentation{
     background-color: rgb(250, 242, 230);
-    padding: 100px 0px 100px 0; /*!!! important pourannuler l'espace entre deux blocks  et auusi a la fin du block*/
+    padding: 100px 0px 100px 0;
   
 }
 #textIntro p{
@@ -123,8 +123,7 @@ h3{
     text-align: center;  
     font-size: 1.8em;
     font-weight:300;
-    margin: 15px;/*//dans tous les direction on aura 15px */
-/*  padding 15 ç& marche pas*/
+    margin: 15px;
 }
 
 #prestations{
@@ -220,10 +219,7 @@ h3{
     float:right;
    
 }
-/*
-#tourisme #ocean ,#tourisme  #phare{
-    float:left;
-} on peux directement faire float :left par défault pour tous les li*/
+
 
  
 /* ************************footer:contact*********************************** */
@@ -296,14 +292,14 @@ form textarea{
 
 #icons a{
     display:inline-block;
-    padding: 0 15px; /*si on ultilise margin au lieu du padding dans ce cas on aura un espace entre les icones qui n'est pas clicable*/
+    padding: 0 15px; 
     color:rgb(250, 242, 230);
     font-size: 1.3em;
    
 
 } 
 #icons a:hover{
-    transform: scale(1.5);/*//pour faire grossier l'image et changer son echelle l;echel normal est 1*/ 
-    transition: 0.2s ease-in-out;/*//demarre doucement et fini doucement */
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
         
 }
